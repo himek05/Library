@@ -11,7 +11,7 @@ import jakarta.servlet.http.HttpServlet;
 import jakarta.servlet.http.HttpServletRequest;
 import jakarta.servlet.http.HttpServletResponse;
 
-public class Signup extends HttpServlet {
+public class Bookadmin extends HttpServlet {
 
 	public void doPost(HttpServletRequest req, HttpServletResponse res) throws ServletException,IOException{
 		try {
@@ -27,10 +27,10 @@ public class Signup extends HttpServlet {
 			System.out.println("This is after ");
 			PreparedStatement pStatement = connection
 					.prepareStatement("Insert into signup_table values(?,?,?)");
-			pStatement.setString(1, req.getParameter("name"));
-			pStatement.setString(2, req.getParameter("username/email"));
-			pStatement.setString(3, req.getParameter("password"));
-			
+			pStatement.setString(1, req.getParameter("Bookid"));
+			pStatement.setString(2, req.getParameter("Bookname"));
+			pStatement.setString(3, req.getParameter("BookPrice"));
+			pStatement.setString(4, req.getParameter("BookAuthor"));
 			int resultSet = pStatement.executeUpdate();
 			if (resultSet > 0) {
 				res.sendRedirect("login.jsp");

@@ -1,11 +1,13 @@
+<%@ page language="java" contentType="text/html; charset=UTF-8"
+    pageEncoding="UTF-8"%>
 <!DOCTYPE html>
-<html lang="en">
+<html>
 <head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Document</title>
-    <style>
-        * {
+<meta charset="UTF-8">
+<title>Insert title here</title>
+</head>
+<style>
+	* {
             margin: 0;
             padding: 0;
             box-sizing: border-box;
@@ -196,10 +198,9 @@
     outline: none;
     text-decoration: none;
 }
-    </style>
-</head>
+</style>
 <body>
-    <div class="navbar">
+	 <div class="navbar">
         <div class="nav-title">Hex Library</div>
         <div class="nav-href">
             <a href="main.html" class="active">Home</a>
@@ -227,23 +228,26 @@
                     </div>
                     <div class="form-group">
                         <!-- <label for="password">Password</label> -->
-                        <input id="password" class="input-field1" type="password" name="passowrd" placeholder="Enter your password" >
+                        <input id="password" class="input-field1" type="password" name="password" placeholder="Enter your password" >
                     </div>
                     <div class="btn">
                         <div class="form-group">
-                            <a href="library_main.html">
-                            	<button type="submit" class="login-btn">Signup</button>
-                            </a>
+                            
+                            	<button type="submit" class="login-btn">
+                            		
+                            	</button>
+                           
                         </div>
                     </div>
                     <div class="footer">
                         <p class="p-footer">Already a member?</p>
-                        <a class="l-footer" href="login.htm">Log in</a>
+                        <a class="l-footer" href="./login.jsp">Log in</a>
                     </div>
                 </form>   
                 
         </div>
         
     </div>
+  
 </body>
 </html>

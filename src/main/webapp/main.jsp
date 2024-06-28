@@ -1,17 +1,13 @@
-
+<%@ page language="java" contentType="text/html; charset=UTF-8"
+    pageEncoding="UTF-8"%>
 <!DOCTYPE html>
-<html lang="en">
-
+<html>
 <head>
-    <meta charset="UTF-8">
-    <meta http-equiv="X-UA-Compatible" content="IE=edge">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Hex library</title>
-    <link rel="stylesheet" href="library.css">
-    
+<meta charset="UTF-8">
+<title>Insert title here</title>
 </head>
 <style>
-		@import url('https://fonts.googleapis.com/css2?family=Inter:wght@100;200;400;500;600;700&display=swap');
+			@import url('https://fonts.googleapis.com/css2?family=Inter:wght@100;200;400;500;600;700&display=swap');
 
 
 :root {
@@ -886,16 +882,15 @@ ul{
 }
 </style>
 <body>
-    <div class="header">
+	 <div class="header">
         <div class="navbar">
             <div class="nav-title">Hex Library</div>
             <div class="nav-href">
-                <a href="./library.html" class="active">Home</a>
+                <a href="./main.html" class="active">Home</a>
                 <a href="./book_id.html" class="nav-link">Books</a>
                 <a href="./others.html" class="nav-link">Others</a>
                 <a href="./books_detaila.html" class="nav-link">Details</a>
                 <a href="./aboutme2.html" class="nav-link">AboutMe</a>
-                <a href="./Login.htm" class="nav-link">Login</a>
             </div>
         </div>
        
@@ -1298,5 +1293,5 @@ ul{
         </div>
     </div>
 </body>
-
+</body>
 </html>
