@@ -5,15 +5,28 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Document</title>
-    <style>
-        * {
+    <title>Books Buy id</title>
+</head>
+<style>
+    :root {
+    --primary-color: #6366F1;
+    --accent-color: #3f83f8;
+    --text-color: #333333;
+    --link-color: #2563eb;
+    --background-color: #ffffff;
+    --light-gray: #f0f0f0;
+    --gray: #808080;
+    --dark-gray: #555;
+}
+     * {
             margin: 0;
             padding: 0;
             box-sizing: border-box;
         }
         body{
             background-color: rgba(255, 235, 205, 0.573);
+            /* background-image: url("edu.png"); */
+            /* position: absolute; */
         }
         .navbar{
             height: 70px;
@@ -54,8 +67,6 @@
 
         .nav-link {
             transition: all ease 0.3s;
-            text-decoration: none;
-
         }
 
         .active {
@@ -108,8 +119,7 @@
             }   
         }
         
-
-        .main-p{
+.main-p{
     color:DarkSlateGray;
 }
 .main-p{
@@ -125,23 +135,30 @@
         margin-top: 50px;
         mix-blend-mode: multiply;
         
+        /* gap: 20px; */
     }
     .div-main{
         display: flex;
-        justify-content: center;
-        align-items: flex-start;
     }
-    
+    .main-p{
+    font-size: 56px ;
+    font-family:serif;
+    font-weight: bold;
+    color:DarkSlateGray;
+}
     img{
         height: 500px;
         width: 500px;
-        border-radius:  15px 0 0 15px;
+        /* border-radius:  15px 0 0 15px var(--dark-gray); */
+        box-shadow: 10px 10px 10px 10px darkslategrey;
 
     }
     .div-form{
         height: 500px;
         width: 500px;
         background-color: white;
+        box-shadow: 10px 10px 10px 10px darkslategrey;
+
     }
     .form {
     background-color: #fefefe97;
@@ -178,7 +195,7 @@
 
 }
 .login-btn{
-    width:250px;
+    width:100%;
     padding: 10px;
     border: none;
     border-radius: 4px;
@@ -188,66 +205,130 @@
     cursor: pointer;
     transition: background-color 0.3s;
     margin-top: 56px;
-    margin-left: 100px;
+    /* margin-left: 40px; */
 }  
 .footer{
     display: flex;
     justify-content: center;
     align-items: center;
     margin-top: 15px;
-    margin-right: 10px;
+    margin-right: 130px;
     gap: 12px;
 }  
 .l-footer{
     outline: none;
     text-decoration: none;
 }
+.button-group{
+    display: flex;
+    gap: 6rem;
+    padding: 1rem;
+    margin-top: 1rem;
+    align-items: center;
+    justify-content: center;
+    outline: none;
+    text-decoration: none;
+}
 
+.start-button,
+.tour-button{
+    
+    border: none;
+    border-radius: 0.375rem;
+    background-color: var(--primary-color);
+    color: var(--background-color);
+    transform: all  0.1s;
+    padding: 0.75rem 1.5rem;
+    font-size: 1rem;
+    font-weight: 600;
+}
+
+.tour-button{
+    background-color: var(--dark-gray);
+}
+
+.start-button:hover{
+    background-color: #5254f8;
+}
+
+.tour-button:hover{
+    background-color: var(--gray);
+}
+.main-div
+{
+    display: flex;
+    justify-content: center;
+    /* align-items: center; */
+}
+.form{
+    /* text-align: center; */
+    animation: slideFromLeft 1s ease forwards;
+    opacity: 0;
+}
+
+@keyframes slideFromLeft {
+
+    0% {
+        opacity: 0;
+        transform: translateX(-100%);
+    }
+
+    100%{
+        opacity: 1;
+        transform: translateX(0);
+    }
+    
+}
 </style>
-</head>
 <body>
     <div class="navbar">
         <div class="nav-title">Hex Library</div>
         <div class="nav-href">
-            <a href="main.html" class="active">Home</a>
-            <a href="login.jsp" class="nav-link">Login</a>
-            <a href="index.html" class="nav-link">Signup</a>
-            <a href="./aboutme.html" class="nav-link">AboutMe</a>
+            <a href="./library.html" class="active">Home</a>
+            <!-- <a href="./book_id.html" class="nav-link">Books</a>     -->
+            <a href="./books_detaila.html" class="nav-link">Books Details</a>
+            <a href="./others.html" class="nav-link">Others</a>
+            <a href="./aboutme2.html" class="nav-link">AboutMe</a>
         </div>
     </div>
-   
+    
     <div class="container">
 
         <div class="div-main">
-            <div class="div-img" >
-                <img src="ee_1699521043096_1699521054394.avif" >
-                
-                <!-- <p class="main-p">Back!</p> -->
-            </div>
+            
+            
             <div class="div-form">
-                <form class="form" action="loginform" method="post">
-                    <p class="main-p">Login</p>
+                <form class="form" action="">
+                    <p class="main-p">Books</p>
+                    <div class="form-group">
+                        <!-- <label for="password">Password</label> -->
+                        <input id="password" class="input-field1" type="id" placeholder="Enter  Book_id" required>
+                    </div>
                     <div class="form-group">
                         <!-- <label for="username">Username</label> -->
-                        <input id="name" class="input-field" type="text" placeholder="Enter your Email" name="username/email"required>
+                        <input id="username" class="input-field" type="text" placeholder="Enter  BookName" required>
                     </div>
-                    
+                   
                     <div class="form-group">
-                        <input id="password" class="input-field1" type="password" placeholder="Enter your password"  name="password"required>
+                        <!-- <label for="password">Password</label> -->
+                        <input id="password" class="input-field1" type="id" placeholder="Price" required>
                     </div>
                     <div class="btn">
-                        <div class="form-group">
-                            <button type="submit" class="login-btn">Login</button>
+                        <!-- <div class="form-group">
+                            <button type="submit" class="login-btn">For Details</button>
+                        </div> -->
+                        <div class="button-group">
+                            <a href="./Books_buy.html" class="start-button">Buy</a>
+                            <a href="./Borrow_count.html" class="tour-button">Borrow</a>
                         </div>
-                    </div>
-                    <div class="footer">
-                        <p class="p-footer">Don't have any account?</p>
-                        <a class="l-footer" href="./Signup.html">Sign up</a>
                     </div>
                 </form>   
                 
         </div>
         
+        
     </div>
+</div>
+            
 </body>
 </html>

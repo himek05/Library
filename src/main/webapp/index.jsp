@@ -198,24 +198,36 @@
     outline: none;
     text-decoration: none;
 }
+.login-admin{
+    /* background-color: #0bc005; */
+    margin-top: 10px;
+    height: 4vh;
+    display: flex;
+    justify-content: end;
+    gap: 10px;
+    margin-right: 20px;
+    outline: none;
+    
+}
 </style>
 <body>
 	 <div class="navbar">
         <div class="nav-title">Hex Library</div>
         <div class="nav-href">
             <a href="main.html" class="active">Home</a>
-            <a href="./Login.htm" class="nav-link">Login</a>
-            <a href="./Signup.html" class="nav-link">Signup</a>
+            <a href="login.htm" class="nav-link">Login</a>
+            <a href="index.html" class="nav-link">Signup</a>
             <a href="./aboutme.html" class="nav-link">About Us</a>
         </div>
     </div>
+     
     <div class="container">
 
         <div class="div-main">
             <div class="div-img" >
                 <img src="ee_1699521043096_1699521054394.avif" >
             </div>
-            <div class="div-form">
+            <div class="div-form"> 
                 <form class="form" action="submitform" method="post">
                     <p class="main-p">Signup </p>
                     <div class="form-group">

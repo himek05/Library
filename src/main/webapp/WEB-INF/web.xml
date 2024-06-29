@@ -21,5 +21,20 @@
   <servlet-name>Second</servlet-name>
   <url-pattern>/loginform</url-pattern>
   </servlet-mapping>
+ 
+ <servlet-mapping>
+  <servlet-name>Second</servlet-name>
+  <url-pattern>/loginadmin</url-pattern>
+  </servlet-mapping> 
   
+   <servlet>
+   
+<servlet-name>third</servlet-name>
+<servlet-class>com.library.Bookadmin</servlet-class>
+</servlet>
+
+  <servlet-mapping>
+  <servlet-name>third</servlet-name>
+  <url-pattern>/Bookadmin</url-pattern>
+  </servlet-mapping>
 </web-app>
