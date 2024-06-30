@@ -21,14 +21,8 @@
   <servlet-name>Second</servlet-name>
   <url-pattern>/loginform</url-pattern>
   </servlet-mapping>
- 
- <servlet-mapping>
-  <servlet-name>Second</servlet-name>
-  <url-pattern>/loginadmin</url-pattern>
-  </servlet-mapping> 
-  
-   <servlet>
-   
+
+  <servlet> 
 <servlet-name>third</servlet-name>
 <servlet-class>com.library.Bookadmin</servlet-class>
 </servlet>
@@ -37,4 +31,14 @@
   <servlet-name>third</servlet-name>
   <url-pattern>/Bookadmin</url-pattern>
   </servlet-mapping>
+  
+      <servlet>
+        <servlet-name>BookBuy</servlet-name>
+        <servlet-class>com.library.BookBuy</servlet-class>
+    </servlet>
+
+    <servlet-mapping>
+        <servlet-name>BookBuy</servlet-name>
+        <url-pattern>/BookBuy</url-pattern>
+    </servlet-mapping>
 </web-app>

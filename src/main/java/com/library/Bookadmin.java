@@ -43,7 +43,7 @@ public class Bookadmin extends HttpServlet {
             PrintWriter pw = res.getWriter();
             Class.forName("com.mysql.cj.jdbc.Driver");
             Connection connection = DriverManager.getConnection(url, username, password);
-            PreparedStatement pStatement = connection.prepareStatement("INSERT INTO Books_table (Bookid, Bookname, BookPrice, BookAuthor) VALUES (?, ?, ?, ?)");
+            PreparedStatement pStatement = connection.prepareStatement("INSERT INTO books_table (Bookid, Bookname, BookPrice, BookAuthor) VALUES (?, ?, ?, ?)");
             pStatement.setString(1, req.getParameter("Bookid"));
             pStatement.setString(2, req.getParameter("Bookname"));
             pStatement.setString(3, req.getParameter("BookPrice"));
@@ -68,7 +68,7 @@ public class Bookadmin extends HttpServlet {
             PrintWriter pw = res.getWriter();
             Class.forName("com.mysql.cj.jdbc.Driver");
             Connection connection = DriverManager.getConnection(url, username, password);
-            PreparedStatement pStatement = connection.prepareStatement("UPDATE Books_table SET Bookname = ?, BookPrice = ?, BookAuthor = ? WHERE Bookid = ?");
+            PreparedStatement pStatement = connection.prepareStatement("UPDATE books_table SET Bookname = ?, BookPrice = ?, BookAuthor = ? WHERE Bookid = ?");
             pStatement.setString(1, req.getParameter("Bookname"));
             pStatement.setString(2, req.getParameter("BookPrice"));
             pStatement.setString(3, req.getParameter("BookAuthor"));
@@ -93,7 +93,7 @@ public class Bookadmin extends HttpServlet {
             PrintWriter pw = res.getWriter();
             Class.forName("com.mysql.cj.jdbc.Driver");
             Connection connection = DriverManager.getConnection(url, username, password);
-            PreparedStatement pStatement = connection.prepareStatement("DELETE FROM Books_table WHERE Bookid = ?");
+            PreparedStatement pStatement = connection.prepareStatement("DELETE FROM books_table WHERE Bookid = ?");
             pStatement.setString(1, req.getParameter("Bookid"));
             int resultSet = pStatement.executeUpdate();
             if (resultSet > 0) {

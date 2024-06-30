@@ -4,12 +4,10 @@
 <html>
 <head>
 <meta charset="UTF-8">
-<title>Insert title here</title>
+<title>Hex Library</title>
 </head>
 <style>
-			@import url('https://fonts.googleapis.com/css2?family=Inter:wght@100;200;400;500;600;700&display=swap');
-
-
+@import url('https://fonts.googleapis.com/css2?family=Inter:wght@100;200;400;500;600;700&display=swap');
 :root {
     --primary-color: #6366F1;
     --accent-color: #3f83f8;
@@ -141,7 +139,7 @@ body{
 }
 .search{
     width: 370px;
-    margin-left: 150px;   
+    margin-left: 81px;   
 }
 .search-input{
     width: 470px;
@@ -434,44 +432,6 @@ form{
     animation: slideFromLeft 1s ease forwards;
 }
 
-.company-grid{
-    display: grid;
-    grid-template-columns: repeat(2,1fr);
-    gap: 3.6rem;
-    padding: 1rem;
-    background-color: var(--light-gray);
-    border: none;
-    border-radius: 0.625rem;
-    margin-top: 2rem;
-    margin-bottom: 2rem;
-    padding: 1.8rem 2.5rem;
-}
-
-.company-logo{
-    font-size: 1rem;
-    font-weight: 500;
-    color: var(--gray);
-    display: flex;
-    gap: 0.5rem;
-}
-
-.svg-img{
-    height: 1.56rem;
-}
-
-.logo-txt{
-    font-size: 1rem;
-}
-
-@media screen and (min-width:640px) {
-    .company-grid{
-        grid-template-columns: repeat(4,1fr);
-    }
-    .company-title{
-        font-size: 2.3rem;
-        font-weight: bold;
-    }
-}
 
 .feature-container{
     background-color: var(--light-gray);
@@ -638,216 +598,6 @@ form{
     color: #777;
 }
 
-.newsletter-container{
-    background-color: var(--background-color);
-    
-    max-width: 1280px;
-    height: 40vh;
-    margin: 0 auto;
-}
-
-.newsletter-content{
-    display: flex;
-    flex-direction: row;
-    background-color: var(--light-gray);
-    height: 100%;
-    border-radius: 8px;
-    overflow: hidden;
-}
-
-.news-left{
-    height: 100%;
-    width: 50%;
-    display: none;
-    position: relative;
-}
-.news-left img{
-    position: absolute;
-    inset: 0;
-    width: 100%;
-    height: 100%;
-    object-fit: cover;
-    object-position: center;
-}
-
-.news-right{
-    display: flex;
-    flex-direction: column;
-    gap: 1rem;
-    padding: 0.5rem;
-    justify-content: center;
-    align-items: flex-start;
-    width: 98%;
-}
-
-@media screen and (min-width:640px) {
-    .news-left{
-        display: block;
-        width: 50%;
-    }
-    .news-right{
-        width: 50%;
-    }
-    .newsletter-container{
-        padding: 2rem;
-    }
-}
-
-.news-info{
-    padding:0 3rem;
-}
-
-.news-title{
-    font-size: 1.5rem;
-    font-weight: bold;
-    color: var(--primary-color);
-    text-align: left;
-}
-
-.news-desc{
-    text-align: left;
-    color: #777;
-}
-
-.news-form{
-    padding: 0 3rem;
-    display: flex;
-    flex-wrap: wrap;
-    margin-bottom: 1rem;
-    gap: 0.6rem;
-}
-
-
-.news-email{
-    background-color: var(--background-color);
-    /* width: 100%; */
-    color: #333;
-    outline: none;
-    border: 1px solid #ccc;
-    border-radius: 4px;
-    padding: 0.5rem 0.75rem;
-}
-
-.news-email:focus{
-    border-color: #2563eb;
-    box-shadow: 0 4px 8px rgba(0,0,0,0.3);
-}
-
-.news-send-button{
-    background-color: var(--primary-color);
-    color: var(--background-color);
-    border: none;
-    border-radius: 0.25rem;
-    padding: 0.5rem 1rem;
-}
-
-.news-send-button:hover{
-    background-color: var(--link-color);
-}
-
-.privacy-policy{
-    font-size: 0.76rem;
-    padding: 0 3rem;
-    color: #777;
-}
-
-.news-link{
-    text-decoration: underline;
-    color: #2563eb;
-}
-
-@media screen and (min-width:640px) {
-    .news-title{
-        font-size: 2.5rem;
-    }
-}
-
-.footer-container{
-    background-color: var(--background-color);
-    margin: 0 auto;
-    padding: 0 2rem;
-    display: flex;
-    flex-direction: column;
-    max-width: 1280px;
-}
-
-.footer{
-    max-width: 1280px;
-    padding:1.2rem 2.4rem;
-    text-align: left;
-    display: flex;
-    justify-content: space-between;
-    padding-right: 2rem;
-}
-
-.footer-top{
-    width: 34%;
-    display: flex;
-    flex-direction: column;
-    gap: 1.65rem;
-}
-
-.logo-svg{
-    width: 2rem;
-    height: 6rem;
-}
-
-.comp-logo{
-    display: flex;
-    justify-content: flex-start;
-    margin-bottom: -1.9rem;
-}
-.logo-link{
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    gap: 0.8rem;
-    font-size: 1.28rem;
-    font-weight: bold;
-    color: black;
-}
-.social-icon{
-    width: 1.5rem;
-    height: 1.5rem;
-}
-.filler-text{
-    font-size: 1rem;
-    color: #777;
-}
-.social{
-    display: flex;
-    gap: 0.8rem;
-}
-.footer-grid{
-    display: grid;
-    grid-template-columns: repeat(4, 1fr);
-    width: 58%;
-    grid-gap: 5.67rem;
-    padding-top: 2rem;
-}
-
-.footer-grid-heading{
-    font-size: 1.05rem;
-    font-weight: bold;
-    color: var(--text-color);
-}
-
-ul{
-    list-style-type: none;
-}
-.footer-link{
-    color: #777;
-    font-size: 0.875rem;
-}
-.footer-links-list{
-    display: flex;
-    flex-direction: column;
-    gap: 1.2rem;
-}
-.footer-grid-heading{
-    margin-bottom: 1.65rem;
-}
-
 .footer-copyright{
     color: var(--gray);
     font-size: 0.75rem;
@@ -886,12 +636,11 @@ ul{
         <div class="navbar">
             <div class="nav-title">Hex Library</div>
             <div class="nav-href">
-                <a href="./main.html" class="active">Home</a>
-                <a href="./book_id.html" class="nav-link">Books</a>
-                <a href="./others.html" class="nav-link">Others</a>
-                <a href="./books_detaila.html" class="nav-link">Details</a>
-                <a href="./aboutme2.html" class="nav-link">AboutMe</a>
-            </div>
+                <a href="main.jsp" class="active">Home</a>
+                <a href="Books_BuyId.jsp" class="nav-link">Books</a>
+                <a href="deatails.jsp" class="nav-link">Details</a>
+                <a href="aboutme.jsp" class="nav-link">AboutMe</a>
+            </div>	
         </div>
        
      <div class="content">
@@ -907,26 +656,7 @@ ul{
                     educational experience.
                 </p>
                 <div class="button-group">
-                    <a href="./Books_Borrow.html" class="start-button">Buy</a>
-                    <a href="./Books_Borrow.html" class="tour-button">Borrow</a>
-                </div>
-            </div>
-
-            <div class="content-right">
-
-                <div class="image-container">
-                    <img src="./edu.png" alt="">
-                   
-                        <!-- <div class="button-group">
-                            <a href="#start" class="start-button">Buy</a>
-                            <a href="#tour" class="tour-button">Borrow</a>
-                        </div> -->
-                    </div>
-
-                </div>
-        </section>
-        <div class="search">
-            <div class="search">
+                   <div class="search">
                 <div class="search-container">
                     <!-- <h1>Search the Library</h1> -->
                     <form action="submit" method="get">
@@ -936,36 +666,31 @@ ul{
                     </form>
                 </div>
         </div>
+                </div>
+            </div>
+
+            <div class="content-right">
+
+                <div class="image-container">
+                    <img src="./img/edu.jpg" alt="">
+                   
+                        <div class="button-group">
+                            <!-- <a href="#start" class="start-button">Buy</a>
+                            <a href="#tour" class="tour-button">Borrow</a> -->
+                        </div> 
+                    </div>
+
+                </div>
+        </section>
+        <div class="search">
+            
     </div>
 
         
     <div class="company-container">
         
         
-        <!-- 
-        <h2 class="company-title">Trusted by the best</h2>
-        <div class="company-grid">
-            <div class="company-logo">
-                <img src="./images/Google.svg" class="svg-img" />
-                <span class="logo-txt">Google</span>
-            </div>
-
-            <div class="company-logo">
-                <img src="./images/Microsoft.svg" class="svg-img" />
-                <span class="logo-txt">Microsoft</span>
-            </div>
-
-            <div class="company-logo">
-                <img src="./images/linkedin.svg" class="svg-img" />
-                <span class="logo-txt">Linkedin</span>
-            </div>
-
-            <div class="company-logo">
-                <img src="./images/VectorEdu.svg" class="svg-img" />
-                <span class="logo-txt">VectorEdu</span>
-            </div>
-
-        </div> -->
+      
     </div>
 
     <div class="feature-container">
@@ -984,7 +709,7 @@ ul{
                 <!-- card 1 -->
                 <div class="feature-card">
                     <div class="icon-container">
-                        <img class="feature-svg" src="./images/PersonalizedLearn.svg" />
+                        <!-- <img class="feature-svg" src="./img/PersonalizedLearn.jpg" /> -->
                     </div>
                     <div class="feature-info">
                         <div class="feature-title">
@@ -999,7 +724,7 @@ ul{
                 <!-- card 2 -->
                 <div class="feature-card">
                     <div class="icon-container">
-                        <img class="feature-svg" src="./images/Affordability.svg" />
+                        <!-- <img class="feature-svg" src="./img/Affordability.jpg" /> -->
                     </div>
                     <div class="feature-info">
                         <div class="feature-title">
@@ -1014,7 +739,7 @@ ul{
                 <!-- card 3 -->
                 <div class="feature-card">
                     <div class="icon-container">
-                        <img class="feature-svg" src="./images/IndustryPatner.svg" />
+                       <!--  <img class="feature-svg" src="./images/IndustryPatner.jpg" /> -->
                     </div>
                     <div class="feature-info">
                         <div class="feature-title">
@@ -1029,7 +754,7 @@ ul{
                 <!-- card 4 -->
                 <div class="feature-card">
                     <div class="icon-container">
-                        <img class="feature-svg" src="./images/InnovativeTech.svg" />
+                        <!-- <img class="feature-svg" src="./images/InnovativeTech.jpg" /> -->
                     </div>
                     <div class="feature-info">
                         <div class="feature-title">
@@ -1044,7 +769,7 @@ ul{
                 <!-- card 5 -->
                 <div class="feature-card">
                     <div class="icon-container">
-                        <img class="feature-svg" src="./images/IndustryPatner.svg" />
+                        <!-- <img class="feature-svg" src="./images/IndustryPatner.jpg" /> -->
                     </div>
                     <div class="feature-info">
                         <div class="feature-title">
@@ -1058,12 +783,12 @@ ul{
                 <!-- card 6 -->
                 <div class="feature-card">
                     <div class="icon-container">
-                        <img class="feature-svg" src="./images/Analytics.svg" />
+                         <!-- <img class="feature-svg" src="./img/Analytics.jpg" />  -->
                     </div>
                     <div class="feature-info">
                         <div class="feature-title">
                             Analytics and Insights
-                        </div>
+                        </div>	
                         <div class="feature-description">
                             Offer detailed progress tracking and analytics to help students and teachers monitor
                             performance and make data-driven decisions.
@@ -1086,7 +811,7 @@ ul{
                         “Babasaheb Ambedkar's views on education were shaped by his commitment to social justice, equality, and the belief that education is a powerful instrument for individual and collective emancipation.His ideas continue to inspire movements for education. ”
                     </div>
                     <div class="testimonial-avatar">
-                        <img src="./bhimrao.jpg" />
+                        <img src="./img/bhim.jpg" />
                     </div>
                     <div class="testimonial-details">
                         <h3 class="testimonial-name">
@@ -1103,7 +828,7 @@ ul{
                         “ A. P. J. Abdul Kalam's views on education underscored its transformative potential to empower individuals, build a strong nation, and foster a culture of continuous learning and innovation. His vision continues to inspire generations worldwide.”
                     </div>
                     <div class="testimonial-avatar">
-                        <img src="./APJ-2008.webp" />
+                        <img src="./img/Apj.jpg" />
                     </div>
                     <div class="testimonial-details">
                         <h3 class="testimonial-name">
@@ -1121,7 +846,7 @@ ul{
                         This quote encapsulates his belief that education should not be limited to mere accumulation of knowledge, but should ignite curiosity, passion, and a lifelong pursuit of learning.”
                     </div>
                     <div class="testimonial-avatar">
-                        <img src="./DrShri.jpg" />
+                        <img src="./img/dr.jpg" />
                     </div>
                     <div class="testimonial-details">
                         <h3 class="testimonial-name">
@@ -1136,157 +861,6 @@ ul{
         </div>
     </div>
 
-    <!-- <div class="newsletter-container">
-        <div class="newsletter-content">
-            <!-- left part  
-            <div class="news-left">
-                <img src="./images/img.png" loading="lazy" alt="news-img" />
-            </div>
-            <!-- right part 
-            <div class="news-right">
-
-                <div class="news-info">
-                    <h2 class="news-title">Get the latest updates</h2>
-
-                    <p class="news-desc">Sign up for our newsletter</p>
-                </div>
-
-                <form class="news-form">
-
-                    <input class="news-email" placeholder="Email" />
-                    <button class="news-send-button">
-                        Send
-                    </button>
-
-                </form>
-
-                <div class="privacy-policy">
-                    By signing up to our newsletter you agree to our
-                    <a class="news-link">
-                        Terms of Service
-                    </a>
-                    and
-                    <a class="news-link">
-                        Privacy policy
-                    </a>
-                </div>
-
-            </div>
-        </div>
-    </div> -->
-
-    <!-- <div class="footer-container">
-        <footer class="footer">
-
-            <div class="footer-top">
-
-                <div class="comp-logo">
-                    <a class="logo-link" href="#">
-                        <img class="logo-svg" src="./images/StudySyn.svg" />
-                        StudySync
-                    </a>
-                </div>
-                <p class="filler-text">Seamless Learning for Brighter Futures.</p>
-                <div class="social">
-                    <a class="social-link" href="#">
-                        <img src="./images/instagram.svg" class="social-icon" />
-                    </a>
-                    <a class="social-link">
-                        <img src="./images/linkedin.svg" class="social-icon" />
-                    </a>
-                    <a class="social-link">
-                        <img src="./images/Microsoft.svg" class="social-icon" />
-                    </a>
-                    <a class="social-link">
-                        <img src="./images/twitter.svg" class="social-icon" />
-                    </a>
-                </div>
-            </div>
-
-            <div class="footer-grid">
-                <!-- column 1 
-                <div class="footer-grid-column">
-                    <div class="footer-grid-heading">
-                        Products
-                    </div>
-                    <ul class="footer-links-list">
-                        <li>
-                            <a href="#overview" class="footer-link">Overview</a>
-                        </li>
-                        <li>
-                            <a href="#overview" class="footer-link">Solutions</a>
-                        </li>
-                        <li>
-                            <a href="#overview" class="footer-link">Pricing</a>
-                        </li>
-                        <li>
-                            <a href="#overview" class="footer-link">Customers</a>
-                        </li>
-                    </ul>
-                </div>
-                <!-- column 2 
-                <div class="footer-grid-column">
-                    <div class="footer-grid-heading">
-                        Company
-                    </div>
-                    <ul class="footer-links-list">
-                        <li>
-                            <a href="#overview" class="footer-link">About</a>
-                        </li>
-                        <li>
-                            <a href="#overview" class="footer-link">Investor Relations</a>
-                        </li>
-                        <li>
-                            <a href="#overview" class="footer-link">Jobs</a>
-                        </li>
-                        <li>
-                            <a href="#overview" class="footer-link">Press</a>
-                        </li>
-                        <li>
-                            <a href="#overview" class="footer-link">Blog</a>
-                        </li>
-                    </ul>
-                </div>
-                <!-- column 3 
-                <div class="footer-grid-column">
-                    <div class="footer-grid-heading">
-                        Support
-                    </div>
-                    <ul class="footer-links-list">
-                        <li>
-                            <a href="#overview" class="footer-link">Contact</a>
-                        </li>
-                        <li>
-                            <a href="#overview" class="footer-link">Documentation</a>
-                        </li>
-                        <li>
-                            <a href="#overview" class="footer-link">Chat</a>
-                        </li>
-                        <li>
-                            <a href="#overview" class="footer-link">FAQ</a>
-                        </li>
-                    </ul>
-                </div>
-                <!-- column 4 
-                <div class="footer-grid-column">
-                    <div class="footer-grid-heading">
-                        Legal
-                    </div>
-                    <ul class="footer-links-list">
-                        <li>
-                            <a href="#overview" class="footer-link">Terms of Service</a>
-                        </li>
-                        <li>
-                            <a href="#overview" class="footer-link">Privacy Policy</a>
-                        </li>
-                        <li>
-                            <a href="#overview" class="footer-link">Cookie Settings</a>
-                        </li>
-
-                    </ul>
-                </div>
-            </div>
-        </footer> -->
         <div class="footer-copyright">
             © 2024 - Present Hex Library. All rights reserved.
             <p style="margin-top: 10px;" class="nav-link">Design by : Himek saini</p>

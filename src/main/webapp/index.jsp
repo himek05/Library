@@ -4,7 +4,7 @@
 <html>
 <head>
 <meta charset="UTF-8">
-<title>Insert title here</title>
+<title>Signup Page</title>
 </head>
 <style>
 	* {
@@ -214,10 +214,10 @@
 	 <div class="navbar">
         <div class="nav-title">Hex Library</div>
         <div class="nav-href">
-            <a href="main.html" class="active">Home</a>
-            <a href="login.htm" class="nav-link">Login</a>
-            <a href="index.html" class="nav-link">Signup</a>
-            <a href="./aboutme.html" class="nav-link">About Us</a>
+            <a href="main.jsp" class="active">Home</a>
+            <a href="login.jsp" class="nav-link">Login</a>
+            <a href="index.jsp" class="nav-link">Signup</a>
+            <a href="aboutme.jsp" class="nav-link">About Us</a>
         </div>
     </div>
      
@@ -225,28 +225,28 @@
 
         <div class="div-main">
             <div class="div-img" >
-                <img src="ee_1699521043096_1699521054394.avif" >
+                <img src="./img/ee_1699521043096_1699521054394.jpg" >
             </div>
             <div class="div-form"> 
                 <form class="form" action="submitform" method="post">
                     <p class="main-p">Signup </p>
                     <div class="form-group">
-                        <!-- <label for="username">Username</label> -->
+                       
                         <input id="name" class="input-field" type="text" name="name" placeholder="Enter your Name" required>
                     </div>
                     <div class="form-group">
-                        <!-- <label for="username">Username</label> -->
+                    
                         <input id="username/email" class="input-field" type="email" name="username/email" placeholder="Enter your username or email" >
                     </div>
                     <div class="form-group">
-                        <!-- <label for="password">Password</label> -->
+                        
                         <input id="password" class="input-field1" type="password" name="password" placeholder="Enter your password" >
                     </div>
                     <div class="btn">
                         <div class="form-group">
                             
                             	<button type="submit" class="login-btn">
-                            		
+                            		Signup
                             	</button>
                            
                         </div>

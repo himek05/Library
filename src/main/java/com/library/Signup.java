@@ -28,7 +28,7 @@ public class Signup extends HttpServlet {
             Class.forName("com.mysql.cj.jdbc.Driver");
 
             try (Connection connection = DriverManager.getConnection(url, username, password);
-                 PreparedStatement pStatement = connection.prepareStatement("INSERT INTO signup_table (name, username/email, password) VALUES (?, ?, ?)")) {
+                 PreparedStatement pStatement = connection.prepareStatement("INSERT INTO signup_table (name, email, password) VALUES (?, ?, ?)")) {
                 
                 pStatement.setString(1, name);
                 pStatement.setString(2, email);

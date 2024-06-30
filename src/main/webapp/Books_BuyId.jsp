@@ -5,7 +5,7 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Books Buy id</title>
+    <title>Books Buy</title>
 </head>
 <style>
     :root {
@@ -284,11 +284,10 @@
     <div class="navbar">
         <div class="nav-title">Hex Library</div>
         <div class="nav-href">
-            <a href="./library.html" class="active">Home</a>
+            <a href="main.jsp" class="active">Home</a>
             <!-- <a href="./book_id.html" class="nav-link">Books</a>     -->
-            <a href="./books_detaila.html" class="nav-link">Books Details</a>
-            <a href="./others.html" class="nav-link">Others</a>
-            <a href="./aboutme2.html" class="nav-link">AboutMe</a>
+            <a href="deatails.jsp" class="nav-link">Books Details</a>
+            <a href="aboutme.jsp" class="nav-link">AboutMe</a>
         </div>
     </div>
     
@@ -302,7 +301,7 @@
                     <p class="main-p">Books</p>
                     <div class="form-group">
                         <!-- <label for="password">Password</label> -->
-                        <input id="password" class="input-field1" type="id" placeholder="Enter  Book_id" required>
+                        <input id="password" class="input-field1" type="id" name="Bookid" placeholder="Enter  Book_id" required>
                     </div>
                     <div class="form-group">
                         <!-- <label for="username">Username</label> -->
@@ -318,8 +317,7 @@
                             <button type="submit" class="login-btn">For Details</button>
                         </div> -->
                         <div class="button-group">
-                            <a href="./Books_buy.html" class="start-button">Buy</a>
-                            <a href="./Borrow_count.html" class="tour-button">Borrow</a>
+                            <a href="" class="start-button">Buy</a>
                         </div>
                     </div>
                 </form>   

@@ -5,7 +5,7 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Document</title>
+    <title>Login Page</title>
     <style>
         * {
             margin: 0;
@@ -202,6 +202,61 @@
     outline: none;
     text-decoration: none;
 }
+.checkbox-container {
+    display: block;
+    position: relative;
+    padding-left: 35px;
+    margin-bottom: 12px;
+    cursor: pointer;
+    font-size: 16px;
+    user-select: none;
+}
+
+.checkbox-container input {
+    position: absolute;
+    opacity: 0;
+    cursor: pointer;
+    height: 0;
+    width: 0;
+}
+
+.checkmark {
+    position: absolute;
+    top: 0;
+    left: 0;
+    height: 20px;
+    width: 20px;
+    background-color: #eee;
+    border-radius: 4px;
+}
+
+.checkbox-container:hover input ~ .checkmark {
+    background-color: #ccc;
+}
+
+.checkbox-container input:checked ~ .checkmark {
+    background-color: #2196F3;
+}
+
+.checkmark:after {
+    content: "";
+    position: absolute;
+    display: none;
+}
+
+.checkbox-container input:checked ~ .checkmark:after {
+    display: block;
+}
+
+.checkbox-container .checkmark:after {
+    left: 7px;
+    top: 3px;
+    width: 5px;
+    height: 10px;
+    border: solid white;
+    border-width: 0 3px 3px 0;
+    transform: rotate(45deg);
+}
 
 </style>
 </head>
@@ -209,31 +264,39 @@
     <div class="navbar">
         <div class="nav-title">Hex Library</div>
         <div class="nav-href">
-            <a href="main.html" class="active">Home</a>
+            <a href="main.jsp" class="active">Home</a>
             <a href="login.jsp" class="nav-link">Login</a>
-            <a href="index.html" class="nav-link">Signup</a>
-            <a href="./aboutme.html" class="nav-link">AboutMe</a>
+            <a href="index.jsp" class="nav-link">Signup</a>
+            <a href="aboutme.jsp" class="nav-link">AboutMe</a>
         </div>
     </div>
    
     <div class="container">
-
+		<div> 
+			
+		</div>
         <div class="div-main">
             <div class="div-img" >
-                <img src="ee_1699521043096_1699521054394.avif" >
+                <img src="./img/ee_1699521043096_1699521054394.jpg" >
                 
-                <!-- <p class="main-p">Back!</p> -->
+               
             </div>
             <div class="div-form">
                 <form class="form" action="loginform" method="post">
                     <p class="main-p">Login</p>
                     <div class="form-group">
-                        <!-- <label for="username">Username</label> -->
-                        <input id="name" class="input-field" type="text" placeholder="Enter your Email" name="username/email"required>
+                      
+                        <input id="name" class="input-field" type="text" placeholder="Enter your Email" name="email"required>
                     </div>
                     
                     <div class="form-group">
+                    </div>
                         <input id="password" class="input-field1" type="password" placeholder="Enter your password"  name="password"required>
+                     <div class="form-group">
+                        <label class="checkbox-container">As Admin
+                <input type="checkbox" id="remember" name="checkbox">
+                <span class="checkmark"></span>
+            </label><br><br>
                     </div>
                     <div class="btn">
                         <div class="form-group">
