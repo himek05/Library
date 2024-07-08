@@ -129,10 +129,10 @@
         <div class="navbar">
             <div class="nav-title">Hex Library</div>
             <div class="nav-href">
-                <a href="./library.html" class="active">Home</a>
-                <a href="./book_id.html" class="nav-link">Books</a>
-                <a href="./others.html" class="nav-link">Others</a>
-                <a href="./aboutme.html" class="nav-link">AboutMe</a>
+                <a href="./main.jsp" class="active">Home</a>
+                <a href="./Books_Buy.jsp" class="nav-link">Books</a>
+                <a href="./details.jsp" class="nav-link">Detaiks</a>
+                <a href="./aboutme.jsp" class="nav-link">AboutMe</a>
             </div>
         </div>
     <p class="nav-title1">Thank You!</p>

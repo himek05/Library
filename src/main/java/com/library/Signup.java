@@ -38,7 +38,7 @@ public class Signup extends HttpServlet {
                 
                 if (resultSet > 0) {
                     if ("Himek".equals(name) && "Himek@123".equals(email) && "123".equals(pass)) {
-                        res.sendRedirect("Books.jsp");
+                        res.sendRedirect("Books_Buy.jsp");
                     } else {
                         res.sendRedirect("login.jsp");
                     }

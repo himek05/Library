@@ -266,7 +266,7 @@
         <div class="nav-href">
             <a href="main.jsp" class="active">Home</a>
             <a href="login.jsp" class="nav-link">Login</a>
-            <a href="index.jsp" class="nav-link">Signup</a>
+            <a href="Signin.jsp" class="nav-link">Signup</a>
             <a href="aboutme.jsp" class="nav-link">AboutMe</a>
         </div>
     </div>
@@ -305,7 +305,7 @@
                     </div>
                     <div class="footer">
                         <p class="p-footer">Don't have any account?</p>
-                        <a class="l-footer" href="./Signup.html">Sign up</a>
+                        <a class="l-footer" href="./Signin.jsp">Sign up</a>
                     </div>
                 </form>   
                 

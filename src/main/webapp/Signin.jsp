@@ -1,32 +1,19 @@
 <%@ page language="java" contentType="text/html; charset=UTF-8"
     pageEncoding="UTF-8"%>
 <!DOCTYPE html>
-<html lang="en">
+<html>
 <head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Books Buy</title>
+<meta charset="UTF-8">
+<title>Signup Page</title>
 </head>
 <style>
-    :root {
-    --primary-color: #6366F1;
-    --accent-color: #3f83f8;
-    --text-color: #333333;
-    --link-color: #2563eb;
-    --background-color: #ffffff;
-    --light-gray: #f0f0f0;
-    --gray: #808080;
-    --dark-gray: #555;
-}
-     * {
+	* {
             margin: 0;
             padding: 0;
             box-sizing: border-box;
         }
         body{
             background-color: rgba(255, 235, 205, 0.573);
-            /* background-image: url("edu.png"); */
-            /* position: absolute; */
         }
         .navbar{
             height: 70px;
@@ -119,7 +106,8 @@
             }   
         }
         
-.main-p{
+
+        .main-p{
     color:DarkSlateGray;
 }
 .main-p{
@@ -135,30 +123,21 @@
         margin-top: 50px;
         mix-blend-mode: multiply;
         
-        /* gap: 20px; */
     }
     .div-main{
         display: flex;
     }
-    .main-p{
-    font-size: 56px ;
-    font-family:serif;
-    font-weight: bold;
-    color:DarkSlateGray;
-}
+    
     img{
         height: 500px;
         width: 500px;
-        /* border-radius:  15px 0 0 15px var(--dark-gray); */
-        box-shadow: 10px 10px 10px 10px darkslategrey;
+    border-radius:  15px 0 0 15px;
 
     }
     .div-form{
         height: 500px;
         width: 500px;
         background-color: white;
-        box-shadow: 10px 10px 10px 10px darkslategrey;
-
     }
     .form {
     background-color: #fefefe97;
@@ -195,7 +174,7 @@
 
 }
 .login-btn{
-    width:100%;
+    width:250px;
     padding: 10px;
     border: none;
     border-radius: 4px;
@@ -205,128 +184,82 @@
     cursor: pointer;
     transition: background-color 0.3s;
     margin-top: 56px;
-    /* margin-left: 40px; */
+    margin-left: 100px;
 }  
 .footer{
     display: flex;
     justify-content: center;
     align-items: center;
     margin-top: 15px;
-    margin-right: 130px;
+    margin-right: 10px;
     gap: 12px;
 }  
 .l-footer{
     outline: none;
     text-decoration: none;
 }
-.button-group{
+.login-admin{
+    /* background-color: #0bc005; */
+    margin-top: 10px;
+    height: 4vh;
     display: flex;
-    gap: 6rem;
-    padding: 1rem;
-    margin-top: 1rem;
-    align-items: center;
-    justify-content: center;
+    justify-content: end;
+    gap: 10px;
+    margin-right: 20px;
     outline: none;
-    text-decoration: none;
-}
-
-.start-button,
-.tour-button{
-    
-    border: none;
-    border-radius: 0.375rem;
-    background-color: var(--primary-color);
-    color: var(--background-color);
-    transform: all  0.1s;
-    padding: 0.75rem 1.5rem;
-    font-size: 1rem;
-    font-weight: 600;
-}
-
-.tour-button{
-    background-color: var(--dark-gray);
-}
-
-.start-button:hover{
-    background-color: #5254f8;
-}
-
-.tour-button:hover{
-    background-color: var(--gray);
-}
-.main-div
-{
-    display: flex;
-    justify-content: center;
-    /* align-items: center; */
-}
-.form{
-    /* text-align: center; */
-    animation: slideFromLeft 1s ease forwards;
-    opacity: 0;
-}
-
-@keyframes slideFromLeft {
-
-    0% {
-        opacity: 0;
-        transform: translateX(-100%);
-    }
-
-    100%{
-        opacity: 1;
-        transform: translateX(0);
-    }
     
 }
 </style>
 <body>
-    <div class="navbar">
+	 <div class="navbar">
         <div class="nav-title">Hex Library</div>
         <div class="nav-href">
             <a href="main.jsp" class="active">Home</a>
-            <!-- <a href="./book_id.html" class="nav-link">Books</a>     -->
-            <a href="deatails.jsp" class="nav-link">Books Details</a>
-            <a href="aboutme.jsp" class="nav-link">AboutMe</a>
+            <a href="login.jsp" class="nav-link">Login</a>
+            <a href="Signin.jsp" class="nav-link">Signup</a>
+            <a href="aboutme.jsp" class="nav-link">About Us</a>
         </div>
     </div>
-    
+     
     <div class="container">
 
         <div class="div-main">
-            
-            
-            <div class="div-form">
-                <form class="form" action="">
-                    <p class="main-p">Books</p>
+            <div class="div-img" >
+                <img src="./img/ee_1699521043096_1699521054394.jpg" >
+            </div>
+            <div class="div-form"> 
+                <form class="form" action="submitform" method="post">
+                    <p class="main-p">Signup </p>
                     <div class="form-group">
-                        <!-- <label for="password">Password</label> -->
-                        <input id="password" class="input-field1" type="id" name="Bookid" placeholder="Enter  Book_id" required>
+                       
+                        <input id="name" class="input-field" type="text" name="name" placeholder="Enter your Name" required>
                     </div>
                     <div class="form-group">
-                        <!-- <label for="username">Username</label> -->
-                        <input id="username" class="input-field" type="text" placeholder="Enter  BookName" required>
+                    
+                        <input id="username/email" class="input-field" type="email" name="username/email" placeholder="Enter your username or email" >
                     </div>
-                   
                     <div class="form-group">
-                        <!-- <label for="password">Password</label> -->
-                        <input id="password" class="input-field1" type="id" placeholder="Price" required>
+                        
+                        <input id="password" class="input-field1" type="password" name="password" placeholder="Enter your password" >
                     </div>
                     <div class="btn">
-                        <!-- <div class="form-group">
-                            <button type="submit" class="login-btn">For Details</button>
-                        </div> -->
-                        <div class="button-group">
-                            <a href="" class="start-button">Buy</a>
+                        <div class="form-group">
+                            
+                            	<button type="submit" class="login-btn">
+                            		Signup
+                            	</button>
+                           
                         </div>
+                    </div>
+                    <div class="footer">
+                        <p class="p-footer">Already a member?</p>
+                        <a class="l-footer" href="./login.jsp">Log in</a>
                     </div>
                 </form>   
                 
         </div>
         
-        
     </div>
-</div>
-            
+  
 </body>
 </html>

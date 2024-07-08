@@ -370,9 +370,9 @@
         <div class="nav-title" style="color: #020734;">Hex Library</div>
         <div class="nav-href">
             <a href="main.jsp" class="active">Home</a>
-            <a href="Book_BuyId.jsp" class="nav-link">Books</a>
-            <a href="aboutme.jsp" class="nav-link">About Us</a>
-            <a href="login.jsp" class="nav-link">Login</a>
+            <a href="Books_Buy.jsp" class="nav-link">Books</a>
+            <a href="./aboutme.jsp" class="nav-link">About Us</a>
+            <a href="./login.jsp" class="nav-link">Login</a>
         </div>
     </div>
     

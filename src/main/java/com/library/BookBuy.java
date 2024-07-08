@@ -37,7 +37,8 @@ public class BookBuy extends HttpServlet {
                     
                     try (ResultSet resultSet = pStatement.executeQuery()) {
                         if (resultSet.next()) {
-                            pw.print("Buy Successfully");
+//                            pw.print("Buy Successfully");
+                        	res.sendRedirect("BookBuy.jsp");
                         } else {
                             pw.print("Not Buy Successful");
                         }

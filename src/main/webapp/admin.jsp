@@ -145,7 +145,7 @@
         </div>
         <div class="main-content">
             <div class="nav-div">
-                <a href="" class="active">Home</a>
+                <a href="./main.jsp" class="active">Home</a>
                 <div class="nav-title">Hex Library</div>
             </div>
             <form method="post" action="Bookadmin" style="margin-top: 10vh;">

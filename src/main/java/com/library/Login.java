@@ -48,7 +48,7 @@
 	                                
 	                                res.sendRedirect("main.jsp");
 	                            } else {
-	                            	res.sendRedirect("Books.jsp");
+	                            	res.sendRedirect("admin.jsp");
 	                            }
 	                        } else {
 	                            pw.print("Login Not Successful");

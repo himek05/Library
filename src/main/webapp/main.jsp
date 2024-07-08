@@ -637,8 +637,8 @@ form{
             <div class="nav-title">Hex Library</div>
             <div class="nav-href">
                 <a href="main.jsp" class="active">Home</a>
-                <a href="Books_BuyId.jsp" class="nav-link">Books</a>
-                <a href="deatails.jsp" class="nav-link">Details</a>
+                <a href="Books_Buy.jsp" class="nav-link">Books</a>
+                <a href="details.jsp" class="nav-link">Details</a>
                 <a href="aboutme.jsp" class="nav-link">AboutMe</a>
             </div>	
         </div>

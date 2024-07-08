@@ -50,7 +50,7 @@ public class Bookadmin extends HttpServlet {
             pStatement.setString(4, req.getParameter("BookAuthor"));
             int resultSet = pStatement.executeUpdate();
             if (resultSet > 0) {
-                pw.print("Book added successfully");
+            	res.sendRedirect("details.jsp");
             } else {
                 pw.print("Failed to add book");
             }
@@ -75,7 +75,7 @@ public class Bookadmin extends HttpServlet {
             pStatement.setString(4, req.getParameter("Bookid"));
             int resultSet = pStatement.executeUpdate();
             if (resultSet > 0) {
-                pw.print("Book updated successfully");
+            	res.sendRedirect("details.jsp");
             } else {
                 pw.print("Failed to update book");
             }
@@ -97,7 +97,7 @@ public class Bookadmin extends HttpServlet {
             pStatement.setString(1, req.getParameter("Bookid"));
             int resultSet = pStatement.executeUpdate();
             if (resultSet > 0) {
-                pw.print("Book deleted successfully");
+            	res.sendRedirect("details.jsp");
             } else {
                 pw.print("Failed to delete book");
             }

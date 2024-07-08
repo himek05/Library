@@ -1,44 +1,60 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <web-app xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns="https://jakarta.ee/xml/ns/jakartaee" xsi:schemaLocation="https://jakarta.ee/xml/ns/jakartaee https://jakarta.ee/xml/ns/jakartaee/web-app_5_0.xsd" id="WebApp_ID" version="5.0">
-  <display-name>Library</display-name>
+    <display-name>Library</display-name>
 
-<servlet>
-<servlet-name>First_class</servlet-name>
-<servlet-class>com.library.Signup</servlet-class>
-</servlet>
+    <servlet>
+        <servlet-name>First_class</servlet-name>
+        <servlet-class>com.library.Signup</servlet-class>
+    </servlet>
+    <servlet-mapping>
+        <servlet-name>First_class</servlet-name>
+        <url-pattern>/submitform</url-pattern>
+    </servlet-mapping>
 
- <servlet-mapping>
-  <servlet-name>First_class</servlet-name>
-  <url-pattern>/submitform</url-pattern>
-  </servlet-mapping>
-  
-  <servlet>
-<servlet-name>Second</servlet-name>
-<servlet-class>com.library.Login</servlet-class>
-</servlet>
+    <servlet>
+        <servlet-name>Second</servlet-name>
+        <servlet-class>com.library.Login</servlet-class>
+    </servlet>
+    <servlet-mapping>
+        <servlet-name>Second</servlet-name>
+        <url-pattern>/loginform</url-pattern>
+    </servlet-mapping>
 
- <servlet-mapping>
-  <servlet-name>Second</servlet-name>
-  <url-pattern>/loginform</url-pattern>
-  </servlet-mapping>
+    <servlet>
+        <servlet-name>third</servlet-name>
+        <servlet-class>com.library.Bookadmin</servlet-class>
+    </servlet>
+    <servlet-mapping>
+        <servlet-name>third</servlet-name>
+        <url-pattern>/Bookadmin</url-pattern>
+    </servlet-mapping>
 
-  <servlet> 
-<servlet-name>third</servlet-name>
-<servlet-class>com.library.Bookadmin</servlet-class>
-</servlet>
-
-  <servlet-mapping>
-  <servlet-name>third</servlet-name>
-  <url-pattern>/Bookadmin</url-pattern>
-  </servlet-mapping>
-  
-      <servlet>
+    <servlet>
         <servlet-name>BookBuy</servlet-name>
         <servlet-class>com.library.BookBuy</servlet-class>
     </servlet>
-
     <servlet-mapping>
         <servlet-name>BookBuy</servlet-name>
         <url-pattern>/BookBuy</url-pattern>
     </servlet-mapping>
+    
+    <servlet>
+    <servlet-name>BookListServlet</servlet-name>
+    <servlet-class>com.library.BookListServlet</servlet-class>
+</servlet>
+
+<servlet-mapping>
+    <servlet-name>BookListServlet</servlet-name>
+    <url-pattern>/BookListServlet</url-pattern>
+</servlet-mapping>
+
+<servlet>
+    <servlet-name>DatabaseServlet</servlet-name>
+    <servlet-class>com.library.Detail</servlet-class>
+</servlet>
+<servlet-mapping>
+    <servlet-name>DatabaseServlet</servlet-name>
+    <url-pattern>/Library/aalu</url-pattern>
+</servlet-mapping>	
+    
 </web-app>
